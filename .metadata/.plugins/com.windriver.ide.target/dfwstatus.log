@@ -4,3 +4,14 @@ DFW status and trace log : Thu Apr 11 16:45:48 2013
   SevError(2) : programcontext.cpp : 5450
 16:45:49.014 ERROR: target definition defaultTarget has not been created
   Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122
+DFW status and trace log : Thu Apr 11 17:13:01 2013
+
+17:13:01.691 ERROR: Socket Error. API: recv, SessionId: 916, ReturnCode:  [SystemErrorCode=10054]: SocketHandler::Read
+  Protocol Component : SevError(2) : sockethandler.cpp : 102
+17:13:01.691 ERROR: Socket Error. API: recv, SessionId: 916, ReturnCode:  [SystemErrorCode=10054]
+  Protocol Component : SevError(2) : sockethandler.cpp : 102
+17:13:01.691 ERROR: target definition defaultTarget has not been created
+  Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122
+17:13:01.691 Operation succeeded: ShutdownServer
+  Reason: ERRNone  Severity: ERRSuccessful17:13:01.691 ERROR: target definition defaultTarget has not been created
+  Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122

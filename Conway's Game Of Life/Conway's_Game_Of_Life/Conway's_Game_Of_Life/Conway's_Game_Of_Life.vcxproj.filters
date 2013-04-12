@@ -24,6 +24,9 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Conway%27s Game Of Life\Conway%27s_Game_Of_Life\Conway%27s_Game_Of_Life\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -32,5 +35,15 @@
     <ClCompile Include="Conway%27s_Game_Of_Life.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\Conway%27s Game Of Life\Conway%27s_Game_Of_Life\Conway%27s_Game_Of_Life\Conway%27s_Game_Of_Life.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Visual Studio 2012\Projects\Conway%27sGameOfLife\Conway%27sGameOfLife\Conway.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
