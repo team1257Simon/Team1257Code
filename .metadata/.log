@@ -25,3 +25,30 @@ Command-line arguments:  -data C:\Users\Nathan\Documents\GitHub\Team1257Code -os
 
 !ENTRY org.eclipse.cdt.core 1 0 2013-04-11 16:49:01.003
 !MESSAGE Indexed 'Team1257Code' (1 sources, 219 headers) in 4.48 sec: 21,463 declarations; 27,186 references; 0 unresolved inclusions; 0 syntax errors; 80 unresolved names (0.16%)
+!SESSION 2013-04-13 16:10:49.679 -----------------------------------------------
+eclipse.buildId=M20110311-1130/WB20110622-1135
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.windriver.ide.common.core 4 0 2013-04-13 16:10:57.366
+!MESSAGE [Activities] Missing activity handler extension. Activity support is disabled, all packages are permanently enabled!
+
+!ENTRY com.windriver.ide 1 0 2013-04-13 16:11:13.219
+!MESSAGE Workbench start-up time: 23.65s, Main window shown after: 22.51s.
+
+!ENTRY com.windriver.ide.common.core 1 0 2013-04-13 16:11:15.251
+!MESSAGE Workbench license obtained in 0.11s, vendor information: <ln>78202</ln><flt>1</flt><ps>1851-1</ps>
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-13 16:11:27.800
+!MESSAGE C:\WindRiver\workbench-3.3\foundation\x86-win32\bin\wtxregd.exe
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-13 16:11:30.438
+!MESSAGE C:\WindRiver\workbench-3.3\dfw\\x86-win32\bin\dfwserver.exe  -protocol mi -io sockets -useregistry -session dfw-wb331-Nathan -registryhost 127.0.0.1
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-13 16:11:31.679
+!MESSAGE Connected to Wind River debug server backend at 127.0.0.1, 127.0.0.1:12904, PID=1628, Session="dfw-wb331-Nathan"
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-13 16:11:32.075
+!MESSAGE Wind River Debug Server API Version '2.12.0' (build name 'DFW_BUILD_3_3_1_21 - 06/23/2011 12:29:11')
