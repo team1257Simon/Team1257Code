@@ -1,6 +1,9 @@
-#Thu Apr 11 16:45:46 EDT 2013
+#Thu Apr 18 15:36:57 EDT 2013
 spelling_locale_initialized=true
+formatter_settings_version=1
 useAnnotationsPrefPage=true
 eclipse.preferences.version=1
+formatter_profile=org.eclipse.cdt.ui.default.allman_profile
+semanticHighlighting.class.color=0,64,128
 useQuickDiffPrefPage=true
 org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>

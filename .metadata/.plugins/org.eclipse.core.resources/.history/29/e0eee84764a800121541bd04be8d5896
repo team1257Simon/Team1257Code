@@ -1,0 +1,41 @@
+#include "Team1257robot.h"
+CTeam1257Robot::CTeam1257Robot():
+team1257Robot(LEFT_MOTOR,RIGHT_MOTOR),
+leftStick(LEFT_STICK),
+rightStick(RIGHT_STICK),
+gyro(GYRO),
+ultrasonic(&CHANNEL_PING,&CHANNEL_ECHO)
+{
+	team1257LCD = DriverStationLCD::GetInstance();
+	team1257LCD->Clear();
+	team1257Robot.SetExpiration(0.1);
+}
+void CTeam1257Robot::Autonomous()
+{
+	team1257LCD->Clear();
+	team1257LCD->UpdateLCD();
+	team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Autonomous Engaged!");
+	team1257LCD->UpdateLCD();
+	GetWatchdog().Feed();
+	while(IsAutonomous() && IsEnabled())
+	{
+		
+	}
+}
+void CTeam1257Robot::OperatorControl()
+{
+	
+}
+void CTeam1257Robot::Test()
+{
+	
+}
+void CTeam1257Robot::Drive()
+{
+	team1257Robot.SetLeftRightMotorOutputs(leftStick.GetY,leftStick.GetTwist);
+}
+void CTeam1257Robot::Drive(int left, int right)
+{
+	team1257Robot.SetLeftRightMotorOutputs(left,right);
+}
+START_ROBOT_CLASS(CTeam1257Robot);
