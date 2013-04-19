@@ -19,6 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="221" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -37,11 +38,11 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.cpp" partName="Team1257Robot.cpp" path="C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257MoreCode/Team1257Robot.cpp" title="Team1257Robot.cpp" tooltip="Team1257MoreCode/Team1257Robot.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Team1257MoreCode/Team1257Robot.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1875" selectionTopPixel="1099"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="664" selectionTopPixel="283"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.h" partName="Team1257Robot.h" path="C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257MoreCode/Team1257Robot.h" title="Team1257Robot.h" tooltip="Team1257MoreCode/Team1257Robot.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Team1257MoreCode/Team1257Robot.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="73" selectionTopPixel="51"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="222" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -75,7 +76,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.windriver.ide.perspective.SDE">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.windriver.ide.perspective.SDE">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.windriver.ide.ui.SDEPerspectiveFactory" id="com.windriver.ide.perspective.SDE" label="Basic Device Development"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -135,13 +136,13 @@
 <hide_menu_item_id id="org.eclipse.debug.ui.commands.ProfileLast"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.move.element"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.self.encapsulate.field"/>
-<hide_menu_item_id id="org.eclipse.ui.navigate.addToWorkingSet"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.project"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.addToWorkingSet"/>
 <hide_menu_item_id id="org.eclipse.ltk.ui.refactor.apply.refactoring.script"/>
 <hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.AllReferences"/>
 <hide_menu_item_id id="org.eclipse.ui.file.revert"/>
-<hide_menu_item_id id="org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.open.super.implementation"/>
+<hide_menu_item_id id="org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction"/>
 <hide_menu_item_id id="org.eclipse.ui.window.closeAllPerspectives"/>
 <hide_menu_item_id id="org.eclipse.wst.sse.ui.structure.select.previous"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals"/>
@@ -175,27 +176,27 @@
 <hide_menu_item_id id="org.eclipse.jdt.ui.generate.javadoc"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.introduce.parameter"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy"/>
-<hide_menu_item_id id="org.eclipse.debug.ui.commands.ToggleMethodBreakpoint"/>
 <hide_menu_item_id id="org.eclipse.team.cvs.ui.updateSwitch"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.ToggleMethodBreakpoint"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.infer.type.arguments"/>
 <hide_menu_item_id id="org.eclipse.wst.sse.ui.format.active.elements"/>
 <hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.StepIntoSelection"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.push.down"/>
-<hide_menu_item_id id="org.eclipse.ui.window.newEditor"/>
 <hide_menu_item_id id="org.eclipse.debug.ui.actions.BreakpointTypesContribution"/>
+<hide_menu_item_id id="org.eclipse.ui.window.newEditor"/>
 <hide_menu_item_id id="com.windriver.ide.debug.ui.menu.dropToFrameAction"/>
-<hide_menu_item_id id="org.eclipse.ui.navigate.selectWorkingSets"/>
 <hide_menu_item_id id="org.eclipse.ui.edit.text.shiftRight"/>
-<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.method"/>
+<hide_menu_item_id id="org.eclipse.ui.navigate.selectWorkingSets"/>
 <hide_menu_item_id id="org.eclipse.debug.ui.commands.StepOver"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.method"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file.quickMenu"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.find.broken.nls.keys"/>
 <hide_menu_item_id id="org.eclipse.ui.file.saveAll"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.class"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.introduce.indirection"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.navigate.gotopackage"/>
-<hide_menu_item_id id="org.eclipse.jdt.junit.gotoTest"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.workspace"/>
+<hide_menu_item_id id="org.eclipse.jdt.junit.gotoTest"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.quick.format"/>
 <hide_menu_item_id id="com.windriver.ide.debug.ui.menu.setBreakpointAtFrameFunctionAction"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.navigate.gototype"/>
@@ -206,16 +207,16 @@
 <hide_menu_item_id id="org.eclipse.cdt.dsf.test.fileBrowser"/>
 <hide_menu_item_id id="org.eclipse.cdt.debug.ui.internal.actions.RestartActionDelegate"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.add.block.comment"/>
-<hide_menu_item_id id="org.eclipse.jdt.ui.navigate.open.type"/>
 <hide_menu_item_id id="org.eclipse.debug.ui.commands.Resume"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.navigate.open.type"/>
 <hide_menu_item_id id="com.windriver.ide.wrlinux.ui.quiltAction"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.add.unimplemented.constructors"/>
 <hide_menu_item_id id="com.windriver.ide.debug.ui.menu.addDataBreakpointAction"/>
-<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.open.external.javadoc"/>
 <hide_menu_item_id id="org.eclipse.jdt.debug.ui.commands.ForceReturn"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.open.external.javadoc"/>
 <hide_menu_item_id id="org.eclipse.wst.sse.ui.goto.matching.bracket"/>
-<hide_menu_item_id id="org.eclipse.cdt.ui.edit.text.rename.element"/>
 <hide_menu_item_id id="org.eclipse.debug.internal.ui.actions.ProfileWithConfigurationAction"/>
+<hide_menu_item_id id="org.eclipse.cdt.ui.edit.text.rename.element"/>
 <hide_menu_item_id id="org.eclipse.team.cvs.ui.update"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.working.set"/>
 <hide_menu_item_id id="com.windriver.ide.debug.ui.menu.runToFrameAddressAction"/>
@@ -314,16 +315,16 @@
 <hide_menu_item_id id="com.windriver.ide.ui.internal.actions.register2eclipseaction"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.extract.constant"/>
 <hide_menu_item_id id="org.eclipse.wst.sse.ui.remove.block.comment"/>
-<hide_menu_item_id id="org.eclipse.wst.sse.ui.cleanup.document"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.implementors.in.working.set"/>
-<hide_menu_item_id id="org.eclipse.wst.xml.ui.nextSibling"/>
+<hide_menu_item_id id="org.eclipse.wst.sse.ui.cleanup.document"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace"/>
+<hide_menu_item_id id="org.eclipse.wst.xml.ui.nextSibling"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.open.call.hierarchy"/>
 <hide_menu_item_id id="org.eclipse.cdt.debug.ui.actions.ResumeAtLine"/>
-<hide_menu_item_id id="org.eclipse.ui.edit.text.shiftLeft"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.organize.imports"/>
-<hide_menu_item_id id="org.eclipse.search.ui.openSearchDialog"/>
+<hide_menu_item_id id="org.eclipse.ui.edit.text.shiftLeft"/>
 <hide_menu_item_id id="org.eclipse.ui.update.manageConfiguration"/>
+<hide_menu_item_id id="org.eclipse.search.ui.openSearchDialog"/>
 <hide_menu_item_id id="org.eclipse.debug.ui.commands.RemoveAllBreakpoints"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.edit.text.java.format"/>
 <hide_menu_item_id id="org.eclipse.wst.sse.ui.structure.select.next"/>
@@ -335,14 +336,14 @@
 <hide_toolbar_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
 <hide_toolbar_item_id id="com.windriver.ide.ui.SetEmacsKeysAction"/>
 <hide_toolbar_item_id id="org.eclipse.team.ui.synchronizeAll"/>
-<hide_toolbar_item_id id="com.windriver.ide.search.performOpenTextSearch"/>
 <hide_toolbar_item_id id="org.eclipse.cdt.dsf.debug.ui.refreshAll"/>
-<hide_toolbar_item_id id="com.windriver.ide.staticanalysis.ui.openElementInCallHierarchy"/>
+<hide_toolbar_item_id id="com.windriver.ide.search.performOpenTextSearch"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.selectWorkingSets"/>
-<hide_toolbar_item_id id="org.eclipse.jdt.ui.navigate.open.type"/>
+<hide_toolbar_item_id id="com.windriver.ide.staticanalysis.ui.openElementInCallHierarchy"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.edit.text.java.toggleBreadcrumb"/>
-<hide_toolbar_item_id id="org.eclipse.cdt.ui.actions.NewFolderDropDown"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.navigate.open.type"/>
 <hide_toolbar_item_id id="com.windriver.ide.vxworks55.action.launch_tornado"/>
+<hide_toolbar_item_id id="org.eclipse.cdt.ui.actions.NewFolderDropDown"/>
 <hide_toolbar_item_id id="com.windriver.ide.wrlinux.ui.quiltAction"/>
 <hide_toolbar_item_id id="org.eclipse.cdt.ui.actions.NewTypeDropDown"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.addToWorkingSet"/>
@@ -360,8 +361,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.NewTypeDropDown"/>
 <hide_toolbar_item_id id="org.eclipse.team.cvs.ui.checkout"/>
-<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
 <hide_toolbar_item_id id="com.windriver.scopetools.memscope.WRMemoryToolbarAction"/>
+<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.rse.ui.view.systemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
@@ -437,6 +438,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SimpleTemplate/MyRobot.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" path="/Team1257MoreCode/PPC603gnu/Team1257Code/Debug/Team1257Code.out"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Team1257MoreCode/PPC603gnu/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" path="/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out"/>
 </editors>
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="154" y="0"/>
@@ -456,8 +461,44 @@
 <item historyLabel="Team1257Robot.h" index="3">
 <position info="not_deleted" x="73" y="0"/>
 </item>
-<item active="true" historyLabel="Team1257Robot.cpp" index="1">
+<item historyLabel="Team1257Robot.cpp" index="1">
 <position/>
+</item>
+<item historyLabel="Team1257Code.out" index="4">
+<position info="not_deleted" x="636" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="1624" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.h" index="5">
+<position info="not_deleted" x="73" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="151" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.h" index="5">
+<position info="not_deleted" x="73" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="151" y="0"/>
+</item>
+<item historyLabel="Makefile" index="6">
+<position info="not_deleted" x="338" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="151" y="0"/>
+</item>
+<item historyLabel="Team1257Code.out" index="7">
+<position info="not_deleted" x="667" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="164" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.h" index="5">
+<position info="not_deleted" x="222" y="0"/>
+</item>
+<item active="true" historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="164" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -477,6 +518,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="Team1257Code.out" tooltip="Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out">
+<persistable path="/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="Team1257MoreCode/PPC603gnu/Makefile">
+<persistable path="/Team1257MoreCode/PPC603gnu/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="Team1257Code.out" tooltip="Team1257MoreCode/PPC603gnu/Team1257Code/Debug/Team1257Code.out">
+<persistable path="/Team1257MoreCode/PPC603gnu/Team1257Code/Debug/Team1257Code.out"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.h" tooltip="Team1257MoreCode/Team1257Robot.h">
 <persistable path="/Team1257MoreCode/Team1257Robot.h"/>
 </file>
@@ -488,9 +538,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.cpp" tooltip="Team1257Code/Team1257Robot.cpp">
 <persistable path="/Team1257Code/Team1257Robot.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="Team1257Code.out" tooltip="Team1257MoreCode/PPC603gnu/Team1257Code/Debug/Team1257Code.out">
-<persistable path="/Team1257MoreCode/PPC603gnu/Team1257Code/Debug/Team1257Code.out"/>
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WPILib.h" tooltip="C:\WindRiver\vxworks-6.3\target\h\WPILib\WPILib.h">
 <persistable path="C:\WindRiver\vxworks-6.3\target\h\WPILib\WPILib.h" project="Team1257MoreCode"/>

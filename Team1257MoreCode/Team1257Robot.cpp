@@ -22,7 +22,7 @@ void CTeam1257Robot::Autonomous()
 	{
 		GetWatchdog().Feed();
 		Drive(.4,.4);
-		if(ultrasonic.GetValue() <= 12.0)
+		if(ultrasonic.GetValue() <= 1.5)
 		{
 			Turn();
 		}
@@ -50,7 +50,7 @@ void CTeam1257Robot::Test()
 		
 		GetWatchdog().Feed();
 		Drive(.5,.5);
-		if(ultrasonic.GetValue() <= 12.0)
+		if(ultrasonic.GetValue() <= 1.5)
 		{
 			Turn();
 		}
@@ -70,7 +70,7 @@ void CTeam1257Robot::Turn()
 	while(1)
 	{
 		//if(Approx(gyro.GetAngle, 90, tolerance))
-		if(gyro.GetAngle() == 90)
+		if((int)gyro.GetAngle() == 90)
 			break;
 		else
 		{
