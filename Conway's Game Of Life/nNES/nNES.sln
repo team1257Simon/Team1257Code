@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nNES", "nNES\nNES.vcxproj", "{11EB2EC0-EC39-4FC5-8FBA-6A6FE09BA2A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nessystem", "Nessystem\Nessystem.vcxproj", "{BDA5AAC0-EFFE-4A38-8E2B-D7870579B532}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11EB2EC0-EC39-4FC5-8FBA-6A6FE09BA2A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11EB2EC0-EC39-4FC5-8FBA-6A6FE09BA2A2}.Debug|Win32.Build.0 = Debug|Win32
+		{11EB2EC0-EC39-4FC5-8FBA-6A6FE09BA2A2}.Debug|Win32.Deploy.0 = Debug|Win32
+		{11EB2EC0-EC39-4FC5-8FBA-6A6FE09BA2A2}.Release|Win32.ActiveCfg = Release|Win32
+		{11EB2EC0-EC39-4FC5-8FBA-6A6FE09BA2A2}.Release|Win32.Build.0 = Release|Win32
+		{11EB2EC0-EC39-4FC5-8FBA-6A6FE09BA2A2}.Release|Win32.Deploy.0 = Release|Win32
+		{BDA5AAC0-EFFE-4A38-8E2B-D7870579B532}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BDA5AAC0-EFFE-4A38-8E2B-D7870579B532}.Debug|Win32.Build.0 = Debug|Win32
+		{BDA5AAC0-EFFE-4A38-8E2B-D7870579B532}.Debug|Win32.Deploy.0 = Debug|Win32
+		{BDA5AAC0-EFFE-4A38-8E2B-D7870579B532}.Release|Win32.ActiveCfg = Release|Win32
+		{BDA5AAC0-EFFE-4A38-8E2B-D7870579B532}.Release|Win32.Build.0 = Release|Win32
+		{BDA5AAC0-EFFE-4A38-8E2B-D7870579B532}.Release|Win32.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

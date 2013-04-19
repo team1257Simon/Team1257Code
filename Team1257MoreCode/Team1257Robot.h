@@ -1,12 +1,11 @@
 #include <WPIlib.h>
-#define CHANNEL_PING new DigitalOutput(1)
-#define CHANNEL_ECHO new DigitalInput(2)
+#define ULTRASONIC 2
 #define LEFT_MOTOR 1
 #define RIGHT_MOTOR 2
 #define LEFT_STICK 1
 #define RIGHT_STICK 2
-#define GYRO 3
-class CTeam1257Robot
+#define GYRO 1
+class CTeam1257Robot : public SimpleRobot
 {
 public:
 	CTeam1257Robot();
@@ -14,15 +13,15 @@ public:
 	void OperatorControl();
 	void Test();
 	void Drive();
-	void Drive(int,int);
+	void Drive(double, double);
 	void Turn();
-	void Approx(int, int, int);
+	//void Approx(int, int, int);
 public:
-	Ultrasonic ultrasonic;
+	AnalogChannel ultrasonic;
 	RobotDrive team1257Robot;
 	Joystick leftStick;
 	Joystick rightStick;
 	DriverStationLCD* team1257LCD;
 	Gyro gyro;
-	int tolerance;
+	//int tolerance;
 };
