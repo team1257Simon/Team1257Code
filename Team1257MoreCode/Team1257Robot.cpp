@@ -35,8 +35,8 @@ void CTeam1257Robot::OperatorControl()
 		if(leftStick.GetRawButton(5) && leftStick.GetRawButton(6))
 		{
 			Drive();
-                 if(ultrasonic.GetValue() <= 1.50)
-                      Drive(-.3,-.3);
+              if(ultrasonic.GetValue() <= 1.5)
+                   Drive(-.3,-.3);
 		}
            else
               Drive(0,0);
