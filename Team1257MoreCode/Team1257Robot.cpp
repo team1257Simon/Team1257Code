@@ -20,8 +20,8 @@ void CTeam1257Robot::Autonomous()
 	//GetWatchdog().Feed();
 	while(IsAutonomous() && IsEnabled())
 	{
-                if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
-                break;
+		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
+			break;
 		//GetWatchdog().Feed();
 		Drive(.3,.3);
 		if(ultrasonic.GetValue() <= 1.5)
@@ -32,22 +32,21 @@ void CTeam1257Robot::Autonomous()
 }
 void CTeam1257Robot::OperatorControl()
 {
-        team1257LCD->Clear();
+	team1257LCD->Clear();
 	team1257LCD->UpdateLCD();
-	team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Autonomous Engaged!");
+	team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Teleop Engaged!");
 	team1257LCD->UpdateLCD();
 	while(IsOperatorControl() && IsEnabled())
 	{
-           if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
-                break;
+		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
+					break;
 		if(leftStick.GetRawButton(5) && leftStick.GetRawButton(6))
 		{
 			Drive();
-               if(ultrasonic.GetValue() <= 1.5)
-                    Drive(-.3,-.3);
+                        if(ultrasonic.GetValue() <= 1.5)
+                             Drive(-.3,-.3);
 		}
-           else
-              Drive(0,0);
+                else Drive(0.0);
 	}
 }
 void CTeam1257Robot::Test()
@@ -59,8 +58,8 @@ void CTeam1257Robot::Test()
 	//GetWatchdog().Feed();
 	while(IsTest() && IsEnabled())
 	{
-		if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
-                break;
+		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
+			break;
 		//GetWatchdog().Feed();
 		Drive(.3,.3);
 		if(ultrasonic.GetValue() <= 1.5)
@@ -71,7 +70,7 @@ void CTeam1257Robot::Test()
 }
 void CTeam1257Robot::Drive()
 {
-	team1257Robot.SetLeftRightMotorOutputs(leftStick.GetY(),leftStick.GetTwist());
+	team1257Robot.SetLeftRightMotorOutputs(.5*leftStick.GetY(),.5*leftStick.GetTwist());
 }
 void CTeam1257Robot::Drive(double left, double right)
 {
@@ -82,22 +81,13 @@ void CTeam1257Robot::Turn()
 	gyro.Reset();
 	while(1)
 	{
-                if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
-                break;
-		//if(Approx(gyro.GetAngle, 90, tolerance))
+		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
+					break;
 		if((int)gyro.GetAngle() == 90)
 			break;
-		else
-		{
-			Drive(-.4,.4);
-		}
+		else Drive(-.3,.3);
 	}
 	Drive(0, 0);
 }
-/*void CTeam1257Robot::Approx(int first, int second, int tol)
-{
-	if((first + tol) == second || (first - tol) == second)
-		return true;
-	else return false;
-}*/
+//bool CTeam1257Robot::Approx(int first, int second, int tol){return first + tol == second || first - tol == second ? true : false;}
 START_ROBOT_CLASS(CTeam1257Robot);
