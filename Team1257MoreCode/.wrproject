@@ -244,7 +244,7 @@
         </mapAttribute>
     </attributes>
     <buildtargets>
-        <buildtarget buildtool="Partial Image Linker" name="Team1257MoreCode_partialImage" passed="false" targetname="Team1257MoreCode_partialImage">
+        <buildtarget buildtool="Partial Image Linker" name="Team1257MoreCode_partialImage" passed="true" targetname="Team1257MoreCode_partialImage">
             <contents>
                 <folder name="/Team1257MoreCode" recursive="true"/>
             </contents>

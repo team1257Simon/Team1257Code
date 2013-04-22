@@ -44,7 +44,7 @@ void CTeam1257Robot::OperatorControl()
 		{
 			Drive();
 			if(ultrasonic.GetValue() <= 1.5)
-				Break;
+				break;
 		}
 		else Drive(0,0);
 	}
