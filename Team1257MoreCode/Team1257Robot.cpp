@@ -35,11 +35,11 @@ void CTeam1257Robot::OperatorControl()
 		if(leftStick.GetRawButton(5) && leftStick.GetRawButton(6))
 		{
 			Drive();
-                        if(ultrasonic.GetValue() <= 12.0)
-                             Drive(-.3,-.3);
+                   if(ultrasonic.GetValue() <= 12.0)
+                        Drive(-.3,-.3);
 		}
-                else
-                        Drive(0,0);
+           else
+                   Drive(0,0);
 	}
 }
 void CTeam1257Robot::Test()
