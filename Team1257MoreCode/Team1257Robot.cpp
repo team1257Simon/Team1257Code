@@ -17,11 +17,13 @@ void CTeam1257Robot::Autonomous()
 	team1257LCD->UpdateLCD();
 	team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Autonomous Engaged!");
 	team1257LCD->UpdateLCD();
-	GetWatchdog().Feed();
+	//GetWatchdog().Feed();
 	while(IsAutonomous() && IsEnabled())
 	{
-		GetWatchdog().Feed();
-		Drive(.4,.4);
+                if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
+                break;
+		//GetWatchdog().Feed();
+		Drive(.3,.3);
 		if(ultrasonic.GetValue() <= 1.5)
 		{
 			Turn();
@@ -30,8 +32,14 @@ void CTeam1257Robot::Autonomous()
 }
 void CTeam1257Robot::OperatorControl()
 {
+        team1257LCD->Clear();
+	team1257LCD->UpdateLCD();
+	team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Autonomous Engaged!");
+	team1257LCD->UpdateLCD();
 	while(IsOperatorControl() && IsEnabled())
 	{
+           if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
+                break;
 		if(leftStick.GetRawButton(5) && leftStick.GetRawButton(6))
 		{
 			Drive();
@@ -48,12 +56,13 @@ void CTeam1257Robot::Test()
 	team1257LCD->UpdateLCD();
 	team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Testing!");
 	team1257LCD->UpdateLCD();
-	GetWatchdog().Feed();
+	//GetWatchdog().Feed();
 	while(IsTest() && IsEnabled())
 	{
-		
-		GetWatchdog().Feed();
-		Drive(.5,.5);
+		if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
+                break;
+		//GetWatchdog().Feed();
+		Drive(.3,.3);
 		if(ultrasonic.GetValue() <= 1.5)
 		{
 			Turn();
@@ -73,6 +82,8 @@ void CTeam1257Robot::Turn()
 	gyro.Reset();
 	while(1)
 	{
+                if(leftStick.getRawButton(2) || rightStick.getRawButton(2))
+                break;
 		//if(Approx(gyro.GetAngle, 90, tolerance))
 		if((int)gyro.GetAngle() == 90)
 			break;
