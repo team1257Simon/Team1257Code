@@ -182,7 +182,7 @@ $(WS_ROOT_DIR)/Team1257Code/PPC603gnu/Team1257Code_partialImage/$(MODE_DIR)/Team
 
 force_referenced_rebuilds_Team1257Code : 
 	$(TRACE_FLAG)cd $(WS_ROOT_DIR)/Team1257Code/PPC603gnu;\
-	make --no-print-directory BUILD_SPEC=PPC603gnu DEBUG_MODE=0 Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o
+	make --no-print-directory BUILD_SPEC=PPC603gnu DEBUG_MODE=1 Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o
 
 force : 
 
