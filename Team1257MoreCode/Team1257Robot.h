@@ -1,3 +1,5 @@
+#ifndef _TEAM1257ROBOT_H_
+#define _TEAM1257ROBOT_H
 #include <WPIlib.h>
 #define ULTRASONIC 2
 #define LEFT_MOTOR 1
@@ -25,3 +27,4 @@ public:
 	Gyro gyro;
 	//int tolerance;
 };
+#endif
