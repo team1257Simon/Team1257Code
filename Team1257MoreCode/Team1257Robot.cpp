@@ -46,7 +46,7 @@ void CTeam1257Robot::OperatorControl()
 			if(ultrasonic.GetValue() <= 1.5)
 				Drive(-.3,-.3);
 		}
-		else Drive(0.0);
+		else Drive(0,0);
 	}
 }
 void CTeam1257Robot::Test()
@@ -81,13 +81,20 @@ void CTeam1257Robot::Turn()
 	gyro.Reset();
 	while(1)
 	{
+		if(IsTest())
+		{
+			team1257LCD->Clear();
+			team1257LCD->UpdateLCD();
+			team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Gyro angle = %d",gyro.GetAngle());
+			team1257LCD->UpdateLCD();
+		}
 		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
 			break;
 		if((int)gyro.GetAngle() == 90)
 			break;
 		else Drive(-.3,.3);
 	}
-	Drive(0, 0);
+	Drive(.3, .3);
 }
 //bool CTeam1257Robot::Approx(int first, int second, int tol){return first + tol == second || first - tol == second ? true : false;}
 START_ROBOT_CLASS(CTeam1257Robot);

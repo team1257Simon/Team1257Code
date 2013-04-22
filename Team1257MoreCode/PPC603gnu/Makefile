@@ -79,114 +79,62 @@ endif
 
 
 #Project Targets
-PROJECT_TARGETS = Team1257Code/$(MODE_DIR)/Team1257Code.out \
-	 Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o
+PROJECT_TARGETS = Team1257MoreCode/$(MODE_DIR)/Team1257MoreCode.out
 
 
 #Rules
 
-# Team1257Code
+# Team1257MoreCode
 ifeq ($(DEBUG_MODE),1)
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
 else
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-Team1257Code/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
+Team1257MoreCode/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
 endif
-Team1257Code/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
-Team1257Code/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
-Team1257Code/$(MODE_DIR)/% : IDE_DEFINES = 
-Team1257Code/$(MODE_DIR)/% : PROJECT_TYPE = DKM
-Team1257Code/$(MODE_DIR)/% : DEFINES = 
-Team1257Code/$(MODE_DIR)/% : EXPAND_DBG = 0
-Team1257Code/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
-Team1257Code/$(MODE_DIR)/% : CPU = PPC603
-Team1257Code/$(MODE_DIR)/% : TOOL_FAMILY = gnu
-Team1257Code/$(MODE_DIR)/% : TOOL = gnu
-Team1257Code/$(MODE_DIR)/% : TOOL_PATH = 
-Team1257Code/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
-Team1257Code/$(MODE_DIR)/% : LIBPATH = 
-Team1257Code/$(MODE_DIR)/% : LIBS = 
-Team1257Code/$(MODE_DIR)/% : OBJ_DIR := Team1257Code/$(MODE_DIR)
+Team1257MoreCode/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
+Team1257MoreCode/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
+Team1257MoreCode/$(MODE_DIR)/% : IDE_DEFINES = 
+Team1257MoreCode/$(MODE_DIR)/% : PROJECT_TYPE = DKM
+Team1257MoreCode/$(MODE_DIR)/% : DEFINES = 
+Team1257MoreCode/$(MODE_DIR)/% : EXPAND_DBG = 0
+Team1257MoreCode/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
+Team1257MoreCode/$(MODE_DIR)/% : CPU = PPC603
+Team1257MoreCode/$(MODE_DIR)/% : TOOL_FAMILY = gnu
+Team1257MoreCode/$(MODE_DIR)/% : TOOL = gnu
+Team1257MoreCode/$(MODE_DIR)/% : TOOL_PATH = 
+Team1257MoreCode/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
+Team1257MoreCode/$(MODE_DIR)/% : LIBPATH = 
+Team1257MoreCode/$(MODE_DIR)/% : LIBS = 
+Team1257MoreCode/$(MODE_DIR)/% : OBJ_DIR := Team1257MoreCode/$(MODE_DIR)
 
-OBJECTS_Team1257Code = $(WS_ROOT_DIR)/Team1257Code/PPC603gnu/Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o
-
-Team1257Code/$(MODE_DIR)/Team1257Code.out : $(OBJECTS_Team1257Code)
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_Team1257Code) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_Team1257Code) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
-
-Team1257Code/$(MODE_DIR)/Team1257Code_compile_file : $(FILE) ;
-
-_clean :: Team1257Code/$(MODE_DIR)/Team1257Code_clean
-
-Team1257Code/$(MODE_DIR)/Team1257Code_clean : 
-	$(TRACE_FLAG)if [ -d "Team1257Code" ]; then cd "Team1257Code"; rm -rf $(MODE_DIR); fi
-
-
-# Team1257Code_partialImage
-ifeq ($(DEBUG_MODE),1)
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -g
-else
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -O2 -fstrength-reduce -fno-builtin
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -O2 -fstrength-reduce -fno-builtin
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Librarian = 
-Team1257Code_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builtin
-endif
-Team1257Code_partialImage/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
-Team1257Code_partialImage/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
-Team1257Code_partialImage/$(MODE_DIR)/% : IDE_DEFINES = 
-Team1257Code_partialImage/$(MODE_DIR)/% : PROJECT_TYPE = DKM
-Team1257Code_partialImage/$(MODE_DIR)/% : DEFINES = 
-Team1257Code_partialImage/$(MODE_DIR)/% : EXPAND_DBG = 0
-Team1257Code_partialImage/$(MODE_DIR)/% : VX_CPU_FAMILY = ppc
-Team1257Code_partialImage/$(MODE_DIR)/% : CPU = PPC603
-Team1257Code_partialImage/$(MODE_DIR)/% : TOOL_FAMILY = gnu
-Team1257Code_partialImage/$(MODE_DIR)/% : TOOL = gnu
-Team1257Code_partialImage/$(MODE_DIR)/% : TOOL_PATH = 
-Team1257Code_partialImage/$(MODE_DIR)/% : CC_ARCH_SPEC = -mcpu=603 -mstrict-align -mno-implicit-fp -mlongcall
-Team1257Code_partialImage/$(MODE_DIR)/% : LIBPATH = 
-Team1257Code_partialImage/$(MODE_DIR)/% : LIBS = 
-Team1257Code_partialImage/$(MODE_DIR)/% : OBJ_DIR := Team1257Code_partialImage/$(MODE_DIR)
-
-Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Code/Team1257Robot.o : $(WS_ROOT_DIR)/Team1257Code/Team1257Robot.cpp $(FORCE_FILE_BUILD)
+Team1257MoreCode/$(MODE_DIR)/Objects/Team1257MoreCode/Team1257Robot.o : $(PRJ_ROOT_DIR)/Team1257Robot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_Team1257Code_partialImage = Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Code/Team1257Robot.o
+OBJECTS_Team1257MoreCode = Team1257MoreCode/$(MODE_DIR)/Objects/Team1257MoreCode/Team1257Robot.o
 
-Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o : $(OBJECTS_Team1257Code_partialImage)
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X  -o "$@" $(OBJECTS_Team1257Code_partialImage) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS)  && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
+Team1257MoreCode/$(MODE_DIR)/Team1257MoreCode.out : $(OBJECTS_Team1257MoreCode)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_Team1257MoreCode) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_Team1257MoreCode) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
 
-Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage_compile_file : $(FILE) ;
+Team1257MoreCode/$(MODE_DIR)/Team1257MoreCode_compile_file : $(FILE) ;
 
-_clean :: Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage_clean
+_clean :: Team1257MoreCode/$(MODE_DIR)/Team1257MoreCode_clean
 
-Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage_clean : 
-	$(TRACE_FLAG)if [ -d "Team1257Code_partialImage" ]; then cd "Team1257Code_partialImage"; rm -rf $(MODE_DIR); fi
-
-$(WS_ROOT_DIR)/Team1257Code/PPC603gnu/Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o : force_referenced_rebuilds_Team1257Code ;
-
-force_referenced_rebuilds_Team1257Code : 
-	$(TRACE_FLAG)cd $(WS_ROOT_DIR)/Team1257Code/PPC603gnu;\
-	make --no-print-directory BUILD_SPEC=PPC603gnu DEBUG_MODE=0 Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o
+Team1257MoreCode/$(MODE_DIR)/Team1257MoreCode_clean : 
+	$(TRACE_FLAG)if [ -d "Team1257MoreCode" ]; then cd "Team1257MoreCode"; rm -rf $(MODE_DIR); fi
 
 force : 
 
-DEP_FILES := Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Code/Team1257Robot.d
+DEP_FILES := Team1257MoreCode/$(MODE_DIR)/Objects/Team1257MoreCode/Team1257Robot.d
 -include $(DEP_FILES)
 
 

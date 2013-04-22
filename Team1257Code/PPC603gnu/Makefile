@@ -162,11 +162,11 @@ Team1257Code_partialImage/$(MODE_DIR)/% : LIBPATH =
 Team1257Code_partialImage/$(MODE_DIR)/% : LIBS = 
 Team1257Code_partialImage/$(MODE_DIR)/% : OBJ_DIR := Team1257Code_partialImage/$(MODE_DIR)
 
-Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Code/Team1257Robot.o : $(PRJ_ROOT_DIR)/Team1257Robot.cpp $(FORCE_FILE_BUILD)
+Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Robot.o : $(WS_ROOT_DIR)/Team1257MoreCode/Team1257Robot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_Team1257Code_partialImage = Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Code/Team1257Robot.o
+OBJECTS_Team1257Code_partialImage = Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Robot.o
 
 Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage.o : $(OBJECTS_Team1257Code_partialImage)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X  -o "$@" $(OBJECTS_Team1257Code_partialImage) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS)  && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
@@ -180,7 +180,7 @@ Team1257Code_partialImage/$(MODE_DIR)/Team1257Code_partialImage_clean :
 
 force : 
 
-DEP_FILES := Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Code/Team1257Robot.d
+DEP_FILES := Team1257Code_partialImage/$(MODE_DIR)/Objects/Team1257Robot.d
 -include $(DEP_FILES)
 
 
