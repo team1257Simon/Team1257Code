@@ -1,7 +1,6 @@
 #include "WPILib.h"
 
-#define CHANNEL_PING new DigitalOutput(1)
-#define CHANNEL_ECHO new DigitalInput(2)
+
 //Rohan, this code will not work
 /**
  * This is a demo program showing the use of the RobotBase class.
@@ -14,25 +13,19 @@ class Robot : public SimpleRobot
 	DriverStationLCD* lcd;
 	RobotDrive myRobot; // robot drive system
 	Joystick stick; // only joystick
-	Ultrasonic distance;
+	AnalogChannel distance;
 	Gyro angle;
-	
-	double dist;
-	double ang;
 	
 
 public:
 	Robot(void):
 		myRobot(1, 2),	// these must be initialized in the same order
 		stick(1),		// as they are declared above.
-		//distance(CHANNEL_PING,CHANNEL_ECHO),
 		distance(2),
 		angle(4)
 		
 	{
 		myRobot.SetExpiration(0.1);
-		dist = distance.GetRangeMM();
-		ang = angle.GetAngle();
 	}
 
 	/**
@@ -41,25 +34,8 @@ public:
 	void Autonomous(void)
 	{
 		myRobot.SetSafetyEnabled(false);
-		lcd->Printf(DriverStationLCD::kUser_Line1, 1, "Autonomous Engaged");
-		
-		while(dist > 50)
-		{
-			myRobot.Drive(0.3, 0.3);
-		}
-		
-		if(dist < 50)
-		{
-			myRobot.Drive(0, 0);
-			Wait(2);
-			turn();
-		}
-		
-		else if(dist < 0)
-		{
-			myRobot.Drive(0, 0);
-			lcd->Printf(DriverStationLCD::kUser_Line4, 1, "Who broke the gyro?!");
-		}
+		lcd->Printf(DriverStationLCD::kUser_Line1, 1, "Autonomous Engaged");		
+	
 	}
 
 	/**
@@ -78,29 +54,7 @@ public:
 	
 	void turn()
 	{
-		while(dist < 50 && (ang < 87 || ang > 93))
-		{
-			myRobot.Drive(0.3, -0.3);
-		}
 		
-		if(dist > 50 || (ang > 87 || ang < 93))
-		{
-			myRobot.Drive(0, 0);
-			angle.Reset();
-			Autonomous();
-		}
-		
-		else if(dist < 10)
-		{
-			myRobot.Drive(0, 0);
-			lcd->Printf(DriverStationLCD::kUser_Line2, 1, "Out of controool!");
-		}
-		
-		else if(dist < 0)
-		{
-			myRobot.Drive(0, 0);
-			lcd->Printf(DriverStationLCD::kUser_Line4, 1, "Who broke the gyro?!");
-		}
 	}
 	
 	/**
