@@ -19,12 +19,12 @@ public:
 	void Turn();
 	//void Approx(int, int, int);
 public:
-	AnalogChannel ultrasonic;
 	RobotDrive team1257Robot;
 	Joystick leftStick;
 	Joystick rightStick;
-	DriverStationLCD* team1257LCD;
 	Gyro gyro;
+	AnalogChannel ultrasonic;
+	DriverStationLCD* team1257LCD;
 	//int tolerance;
 };
 #endif
