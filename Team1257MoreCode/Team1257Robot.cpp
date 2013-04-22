@@ -39,12 +39,12 @@ void CTeam1257Robot::OperatorControl()
 	while(IsOperatorControl() && IsEnabled())
 	{
 		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
-					break;
+			break;
 		if(leftStick.GetRawButton(5) && leftStick.GetRawButton(6))
 		{
 			Drive();
                         if(ultrasonic.GetValue() <= 1.5)
-                             Drive(-.3,-.3);
+				Drive(-.3,-.3);
 		}
                 else Drive(0.0);
 	}
@@ -82,7 +82,7 @@ void CTeam1257Robot::Turn()
 	while(1)
 	{
 		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
-					break;
+			break;
 		if((int)gyro.GetAngle() == 90)
 			break;
 		else Drive(-.3,.3);
