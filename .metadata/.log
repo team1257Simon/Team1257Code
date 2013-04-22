@@ -41593,3 +41593,27 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.windriver.ide.target 1 0 2013-04-22 16:23:46.997
 !MESSAGE Wind River Debug Server API Version '2.12.0' (build name 'DFW_BUILD_3_3_1_21 - 06/23/2011 12:29:11')
+!SESSION 2013-04-22 16:24:18.096 -----------------------------------------------
+eclipse.buildId=M20110311-1130/WB20110622-1135
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.windriver.ide.common.core 1 0 2013-04-22 16:24:23.602
+!MESSAGE Workbench license obtained in 0.05s, vendor information: <ln>78202</ln><flt>1</flt><ps>1851-1</ps>
+
+!ENTRY com.windriver.ide 1 0 2013-04-22 16:24:23.637
+!MESSAGE Workbench start-up time: 5.56s, Main window shown after: 4.93s.
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-22 16:24:23.719
+!MESSAGE C:\WindRiver\workbench-3.3\dfw\\x86-win32\bin\dfwserver.exe  -protocol mi -io sockets -useregistry -session dfw-wb331-Nathan -registryhost 127.0.0.1
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-22 16:24:23.946
+!MESSAGE Connected to Wind River debug server backend at 127.0.0.1, 127.0.0.1:24900, PID=8104, Session="dfw-wb331-Nathan"
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-22 16:24:24.283
+!MESSAGE Wind River Debug Server API Version '2.12.0' (build name 'DFW_BUILD_3_3_1_21 - 06/23/2011 12:29:11')
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-04-22 16:24:37.062
+!MESSAGE Indexed 'Team1257MoreCode' (0 sources, 15 headers) in 0.53 sec: 125 declarations; 301 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
