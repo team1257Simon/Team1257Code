@@ -38,7 +38,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.cpp" partName="Team1257Robot.cpp" path="C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257MoreCode/Team1257Robot.cpp" title="Team1257Robot.cpp" tooltip="Team1257MoreCode/Team1257Robot.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Team1257MoreCode/Team1257Robot.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="664" selectionTopPixel="283"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="602" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.h" partName="Team1257Robot.h" path="C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257MoreCode/Team1257Robot.h" title="Team1257Robot.h" tooltip="Team1257MoreCode/Team1257Robot.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Team1257MoreCode/Team1257Robot.h"/>
@@ -76,7 +76,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.windriver.ide.perspective.SDE">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.windriver.ide.perspective.SDE">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.windriver.ide.ui.SDEPerspectiveFactory" id="com.windriver.ide.perspective.SDE" label="Basic Device Development"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -442,6 +442,7 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Team1257MoreCode/PPC603gnu/Makefile"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" path="/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Team1257MoreCode/PPC603gnu/Makefile"/>
 </editors>
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="154" y="0"/>
@@ -497,8 +498,17 @@
 <item historyLabel="Team1257Robot.h" index="5">
 <position info="not_deleted" x="222" y="0"/>
 </item>
-<item active="true" historyLabel="Team1257Robot.cpp" index="1">
+<item historyLabel="Team1257Robot.cpp" index="1">
 <position info="not_deleted" x="164" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Makefile" index="8">
+<position info="not_deleted" x="491" y="0"/>
+</item>
+<item active="true" historyLabel="Team1257Robot.cpp" index="1">
+<position info="not_deleted" x="602" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -518,11 +528,11 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="Team1257Code.out" tooltip="Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out">
-<persistable path="/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="Team1257MoreCode/PPC603gnu/Makefile">
 <persistable path="/Team1257MoreCode/PPC603gnu/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="Team1257Code.out" tooltip="Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out">
+<persistable path="/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="Team1257Code.out" tooltip="Team1257MoreCode/PPC603gnu/Team1257Code/Debug/Team1257Code.out">
 <persistable path="/Team1257MoreCode/PPC603gnu/Team1257Code/Debug/Team1257Code.out"/>
