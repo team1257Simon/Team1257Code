@@ -57,7 +57,7 @@
 #define __REGISTER_PREFIX__ 
 #define __USER_LABEL_PREFIX__ 
 #define __VERSION__ "3.4.4"
-#define __NO_INLINE__ 1
+#define __OPTIMIZE__ 1
 #define __FINITE_MATH_ONLY__ 0
 #define __STRICT_ANSI__ 1
 #define __CHAR_UNSIGNED__ 1
