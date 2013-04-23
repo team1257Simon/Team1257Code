@@ -251,12 +251,7 @@
         </buildtarget>
         <buildtarget buildtool="Partial Image Linker" name="Team1257Code_partialImage" passed="true" targetname="Team1257Code_partialImage">
             <contents>
-                <file name="/Team1257MoreCode/Team1257Robot.cpp"/>
-                <folder name="/Team1257Code" recursive="true">
-                    <excludes>
-                        <file name="Team1257Robot.cpp"/>
-                    </excludes>
-                </folder>
+                <folder name="/Team1257Code" recursive="true"/>
             </contents>
         </buildtarget>
     </buildtargets>
