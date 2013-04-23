@@ -73,9 +73,7 @@ void CTeam1257Robot::Test()
 			break;
 		//GetWatchdog().Feed();
 		Drive(.3,.3);
-        team1257LCD->Clear();
-	    team1257LCD->UpdateLCD();
-	    team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Ultrasound voltage = %d", ultrasonic.GetValue());
+	    team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Ultrasound voltage = %f", ultrasonic.GetValue());
 	    team1257LCD->UpdateLCD();
 		if(ultrasonic.GetValue() <= 1.5)
 		{
@@ -98,9 +96,7 @@ void CTeam1257Robot::Turn()
 	{
 		if(IsTest())
 		{
-			team1257LCD->Clear();
-			team1257LCD->UpdateLCD();
-			team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Gyro angle = %d",gyro.GetAngle());
+			team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Gyro angle = %f",gyro.GetAngle());
 			team1257LCD->UpdateLCD();
 		}
 		if(leftStick.GetRawButton(2)||rightStick.GetRawButton(2))
