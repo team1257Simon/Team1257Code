@@ -23,6 +23,7 @@ public:
 	void Drive(double, double);
 	void Turn();
 	//void Approx(int, int, int);
+        void SafetyMethod();
 public:
 	RobotDrive team1257Robot;
 	Joystick leftStick;
