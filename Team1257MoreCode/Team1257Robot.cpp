@@ -66,6 +66,10 @@ void CTeam1257Robot::Test()
 			break;
 		//GetWatchdog().Feed();
 		Drive(.3,.3);
+                team1257LCD->Clear();
+	        team1257LCD->UpdateLCD();
+	        team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Ultrasound voltage = %d", ultrasound.GetValue());
+	        team1257LCD->UpdateLCD();
 		if(ultrasonic.GetValue() <= 1.5)
 		{
 			Turn();
