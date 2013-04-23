@@ -48,7 +48,7 @@ void CTeam1257Robot::OperatorControl()
 		{
 			Drive();
 			if(ultrasonic.GetValue() <= 1.5)
-				break;
+				SafetyMethod();
 		}
 		else Drive(0,0);
 	}
@@ -99,6 +99,18 @@ void CTeam1257Robot::Turn()
 		else Drive(-.3,.3);
 	}
 	Drive(.3, .3);
+}
+void CTeam1257Robot::SafetyMethod()
+{
+        while(1)
+        {
+              if(ultrasonic.GetValue() >= 5) return;
+              else
+              {
+                    if(leftStick.GetY >= 0 && leftStick.GetTwist >= 0) Drive(0,0);
+                    else Drive();
+              }
+        }
 }
 //bool CTeam1257Robot::Approx(int first, int second, int tol){return first + tol == second || first - tol == second ? true : false;}
 START_ROBOT_CLASS(CTeam1257Robot);
