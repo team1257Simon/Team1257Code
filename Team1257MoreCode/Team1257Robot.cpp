@@ -47,8 +47,7 @@ void CTeam1257Robot::OperatorControl()
 		if(leftStick.GetRawButton(5) && leftStick.GetRawButton(6))
 		{
 			Drive();
-			if(ultrasonic.GetValue() <= 1.5)
-				SafetyMethod();
+			if(ultrasonic.GetValue() <= 1.5)SafetyMethod();
 		}
 		else Drive(0,0);
 	}
@@ -66,10 +65,10 @@ void CTeam1257Robot::Test()
 			break;
 		//GetWatchdog().Feed();
 		Drive(.3,.3);
-                team1257LCD->Clear();
-	        team1257LCD->UpdateLCD();
-	        team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Ultrasound voltage = %d", ultrasound.GetValue());
-	        team1257LCD->UpdateLCD();
+        team1257LCD->Clear();
+	    team1257LCD->UpdateLCD();
+	    team1257LCD->Printf(DriverStationLCD::kUser_Line1, 1, "Ultrasound voltage = %d", ultrasonic.GetValue());
+	    team1257LCD->UpdateLCD();
 		if(ultrasonic.GetValue() <= 1.5)
 		{
 			Turn();
@@ -111,7 +110,7 @@ void CTeam1257Robot::SafetyMethod()
               if(ultrasonic.GetValue() >= 5) return;
               else
               {
-                    if(leftStick.GetY >= 0 && leftStick.GetTwist >= 0) Drive(0,0);
+                    if(leftStick.GetY() >= 0 && leftStick.GetTwist() >= 0) Drive(0,0);
                     else Drive();
               }
         }
