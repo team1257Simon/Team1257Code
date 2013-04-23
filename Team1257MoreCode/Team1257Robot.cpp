@@ -1,3 +1,7 @@
+/*
+ * Team1257Robot.cpp:
+ * Main source file/implementation.
+ */
 #include "Team1257robot.h"
 CTeam1257Robot::CTeam1257Robot():
 team1257Robot(LEFT_MOTOR,RIGHT_MOTOR),

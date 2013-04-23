@@ -1,3 +1,8 @@
+/*
+ * Team1257Robot.h:
+ * Has the #defines, prototypes and class definition for CTeam1257Robot.
+ * Author: Nathan Simon
+ */
 #ifndef _TEAM1257ROBOT_H_
 #define _TEAM1257ROBOT_H
 #include <WPIlib.h>
