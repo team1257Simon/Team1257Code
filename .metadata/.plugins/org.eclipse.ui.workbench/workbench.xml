@@ -38,9 +38,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.cpp" partName="Team1257Robot.cpp" path="C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257MoreCode/Team1257Robot.cpp" title="Team1257Robot.cpp" tooltip="Team1257MoreCode/Team1257Robot.cpp" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.cpp" partName="Team1257Robot.cpp" path="E:/GitHub/Team1257Code/Team1257MoreCode/Team1257Robot.cpp" title="Team1257Robot.cpp" tooltip="Team1257MoreCode/Team1257Robot.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Team1257MoreCode/Team1257Robot.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1936" selectionTopPixel="1054"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2435" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.h" partName="Team1257Robot.h" path="C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257MoreCode/Team1257Robot.h" title="Team1257Robot.h" tooltip="Team1257MoreCode/Team1257Robot.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Team1257MoreCode/Team1257Robot.h"/>
@@ -466,9 +466,6 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Team1257MoreCode/PPC603gnu/Makefile"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" path="/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Team1257MoreCode/PPC603gnu/Makefile"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257Code/Team1257Robot.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.h"/>
@@ -480,29 +477,15 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257Code/Team1257Robot.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.cpp"/>
+<editor factoryID="com.windriver.ide.devcenter.internal.DevCenterEditorInputFactory" id="com.windriver.ide.devcenter.internal.DevCenterEditor"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Team1257MoreCode/Team1257Robot.cpp"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="D:\WindRiver\vxworks-6.3\target\h\WPILib\DriverStationLCD.h" project="Team1257MoreCode"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="E:\WindRiver\vxworks-6.3\target\h\WPILib\DriverStationLCD.h" project="Team1257MoreCode"/>
 </editors>
-<item historyLabel="Makefile" index="2">
-<position info="not_deleted" x="338" y="0"/>
-</item>
-<item historyLabel="Team1257Robot.cpp" index="0">
-<position info="not_deleted" x="151" y="0"/>
-</item>
-<item historyLabel="Team1257Code.out" index="3">
-<position info="not_deleted" x="667" y="0"/>
-</item>
-<item historyLabel="Team1257Robot.cpp" index="0">
-<position info="not_deleted" x="164" y="0"/>
-</item>
-<item historyLabel="Team1257Robot.h" index="1">
-<position info="not_deleted" x="222" y="0"/>
-</item>
-<item historyLabel="Team1257Robot.cpp" index="0">
-<position info="not_deleted" x="164" y="0"/>
-</item>
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Makefile" index="4">
+<item historyLabel="Makefile" index="1">
 <position info="not_deleted" x="491" y="0"/>
 </item>
 <item historyLabel="Team1257Robot.cpp" index="0">
@@ -517,19 +500,19 @@
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="1943" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="5">
+<item historyLabel="Team1257Robot.cpp" index="2">
 <position/>
 </item>
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="1943" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="5">
+<item historyLabel="Team1257Robot.cpp" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="1943" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="5">
+<item historyLabel="Team1257Robot.cpp" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="Team1257Robot.cpp" index="0">
@@ -541,13 +524,13 @@
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="190" y="1"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="6">
+<item historyLabel="Team1257Robot.h" index="3">
 <position info="not_deleted" x="222" y="0"/>
 </item>
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="190" y="1"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="6">
+<item historyLabel="Team1257Robot.h" index="3">
 <position info="not_deleted" x="455" y="0"/>
 </item>
 <item historyLabel="Team1257Robot.cpp" index="0">
@@ -559,75 +542,91 @@
 <item historyLabel="Team1257Robot.cpp" index="0">
 <position info="not_deleted" x="190" y="1"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="7">
+<item historyLabel="Team1257Robot.h" index="4">
 <position/>
 </item>
-<item historyLabel="Team1257Robot.h" index="7">
+<item historyLabel="Team1257Robot.h" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="190" y="1"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="9">
+<item historyLabel="Team1257Robot.h" index="6">
 <position info="not_deleted" x="122" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="1280" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="9">
+<item historyLabel="Team1257Robot.h" index="6">
 <position info="not_deleted" x="122" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="62" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="9">
+<item historyLabel="Team1257Robot.h" index="6">
 <position info="not_deleted" x="7" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="62" y="0"/>
 </item>
-<item historyLabel="Getting Started" index="10"/>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Getting Started" index="7"/>
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="11">
+<item historyLabel="Team1257Robot.h" index="8">
 <position info="not_deleted" x="586" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="1863" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="2824" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="2854" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="12">
+<item historyLabel="Team1257Robot.cpp" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="2854" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="1313" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="1436" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.cpp" index="8">
+<item historyLabel="Team1257Robot.cpp" index="5">
 <position info="not_deleted" x="1307" y="0"/>
 </item>
-<item historyLabel="Team1257Robot.h" index="13">
+<item historyLabel="Team1257Robot.h" index="10">
 <position info="not_deleted" x="584" y="0"/>
 </item>
-<item active="true" historyLabel="Team1257Robot.cpp" index="14">
+<item historyLabel="Team1257Robot.cpp" index="11">
 <position info="not_deleted" x="3019" y="0"/>
+</item>
+<item historyLabel="Getting Started" index="12"/>
+<item historyLabel="Team1257Robot.cpp" index="13">
+<position info="not_deleted" x="1874" y="0"/>
+</item>
+<item historyLabel="DriverStationLCD.h" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Team1257Robot.cpp" index="13">
+<position info="not_deleted" x="1874" y="0"/>
+</item>
+<item historyLabel="DriverStationLCD.h" index="15">
+<position info="not_deleted" x="690" y="0"/>
+</item>
+<item active="true" historyLabel="Team1257Robot.cpp" index="13">
+<position info="not_deleted" x="1874" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -647,6 +646,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="DriverStationLCD.h" tooltip="E:\WindRiver\vxworks-6.3\target\h\WPILib\DriverStationLCD.h">
+<persistable path="E:\WindRiver\vxworks-6.3\target\h\WPILib\DriverStationLCD.h" project="Team1257MoreCode"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="DriverStationLCD.h" tooltip="D:\WindRiver\vxworks-6.3\target\h\WPILib\DriverStationLCD.h">
+<persistable path="D:\WindRiver\vxworks-6.3\target\h\WPILib\DriverStationLCD.h" project="Team1257MoreCode"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Team1257Robot.cpp" tooltip="Team1257Code/Team1257Robot.cpp">
 <persistable path="/Team1257Code/Team1257Robot.cpp"/>
 </file>
