@@ -1,0 +1,23 @@
+DFW status and trace log : Wed Apr 24 09:22:40 2013
+
+09:22:40.700 ERROR: no id specified
+  SevError(2) : programcontext.cpp : 5450
+09:22:40.707 ERROR: target definition defaultTarget has not been created
+  Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122
+DFW status and trace log : Wed Apr 24 09:23:21 2013
+
+09:23:21.575 ERROR: Property not found: ModuleOSManaged
+  Tos Component : SevError(2) : tosobject.cpp : 2488
+09:23:21.580 ERROR: File not found: Z:/GitHub/Team1257Code/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out: ObjectFile::Open
+  SevError(2) : objectfile.cpp : 73
+09:23:21.580 ERROR: File not found: Z:/GitHub/Team1257Code/Team1257MoreCode/PPC603gnu/Team1257Code/NonDebug/Team1257Code.out
+  SevError(2) : objectfile.cpp : 73
+09:23:36.455 ERROR: Socket Error. API: recv, SessionId: 812, ReturnCode:  [SystemErrorCode=10054]: SocketHandler::Read
+  Protocol Component : SevError(2) : sockethandler.cpp : 102
+09:23:36.456 ERROR: Socket Error. API: recv, SessionId: 812, ReturnCode:  [SystemErrorCode=10054]
+  Protocol Component : SevError(2) : sockethandler.cpp : 102
+09:23:36.472 ERROR: target definition defaultTarget has not been created
+  Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122
+09:23:36.472 Operation succeeded: ShutdownServer
+  Reason: ERRNone  Severity: ERRSuccessful09:23:36.472 ERROR: target definition defaultTarget has not been created
+  Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122

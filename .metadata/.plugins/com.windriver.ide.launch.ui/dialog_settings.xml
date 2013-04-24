@@ -6,7 +6,11 @@
 		</section>
 	</section>
 	<section name="com.windriver.ide.launch.ui.context.WRCompositeContextSelectorTab">
+		<section name="com.windriver.ide.launch.ui.tabs.vxworks.kerneltask.WRVxWorksKernelTaskConfiguratorMediatorPage">
+		</section>
 		<section name="com.windriver.ide.launch.ui.tabs.vxworks.kerneltask.download.WRVxWorksKernelModuleDownloadConfiguratorMediatorPage">
 		</section>
+	</section>
+	<section name="WRVxWorksKernelTaskEntryPointSelectionDialog">
 	</section>
 </section>
