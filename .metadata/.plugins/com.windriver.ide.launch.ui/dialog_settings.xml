@@ -2,6 +2,11 @@
 <section name="Workbench">
 	<section name="com.windriver.ide.launch.ui.context.WRFlatCompositeLaunchContextSelectorMediatorPage">
 		<section name="com.windriver.ide.launch.ui.context.WRFlatCompositeLaunchContextSelectorMediatorPage$WRFlatCompositeLaunchContextSelectorControl">
+			<item value="false" key="noEntryPoint - Team1257MoreCode.out - vxsim0.hideUnconnected"/>
+			<item value="false" key="noEntryPoint - Team1257MoreCode.out - VxWorks6x_10.12.57.2.hideUnconnected"/>
+			<item value="false" key="FRC_UserProgram_StartupLibraryInit - Team1257MoreCode.out - VxWorks6x_10.12.57.2.hideUnconnected"/>
+			<item value="false" key="noEntryPoint - Team1257MoreCode.out - multiple.hideUnconnected"/>
+			<item value="false" key="New_configuration.hideUnconnected"/>
 			<item value="false" key="noEntryPoint - Team1257Code.out - vxsim0.hideUnconnected"/>
 		</section>
 	</section>
