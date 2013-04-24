@@ -1,39 +1,17 @@
-DFW status and trace log : Wed Apr 24 17:00:16 2013
+DFW status and trace log : Wed Apr 24 17:04:51 2013
 
-17:00:16.748 ERROR: no id specified
+17:04:51.238 ERROR: no id specified
   SevError(2) : programcontext.cpp : 5450
-17:00:16.774 ERROR: target definition defaultTarget has not been created
+17:04:51.277 ERROR: target definition defaultTarget has not been created
   Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122
-DFW status and trace log : Wed Apr 24 17:02:12 2013
+DFW status and trace log : Wed Apr 24 17:05:11 2013
 
-17:02:12.125 ERROR: Property not found: ModuleOSManaged
-  Tos Component : SevError(2) : tosobject.cpp : 2488
-17:02:12.127 ERROR: Program context is undefined
-  SevError(2) : scdataaccess.cpp : 2922
-17:02:12.127 ERROR: Cannot determine register repository for context '': SCRegisterAccess::GetPC
-  SevError(2) : programcontext.cpp : 4495
-17:02:12.127 ERROR: Cannot determine register repository for context ''
-  SevError(2) : programcontext.cpp : 4495
-17:02:12.171 ERROR: The module requires OS information to perform relocations.: ModuleInfo::GetAddressAdjustments
-  Module Component : SevError(2) : moduleslist.cpp : 2476
-17:02:12.171 ERROR: The module requires OS information to perform relocations.
-  Module Component : SevError(2) : moduleslist.cpp : 2476
-17:02:12.171 WARNING: The module requires OS information to perform relocations.: moduleload.cpp::AdjustSectionsAddress
-  Module Component : SevWarning(1) : moduleload.cpp : 975
-17:02:12.171 WARNING: The module requires OS information to perform relocations.
-  Module Component : SevWarning(1) : moduleload.cpp : 975
-17:02:12.171 ERROR: Program context is undefined
-  SevError(2) : scdataaccess.cpp : 2922
-17:02:12.171 ERROR: Cannot determine register repository for context '': SCRegisterAccess::GetPC
-  SevError(2) : programcontext.cpp : 4495
-17:02:12.171 ERROR: Cannot determine register repository for context ''
-  SevError(2) : programcontext.cpp : 4495
-17:02:38.380 ERROR: Socket Error. API: recv, SessionId: 912, ReturnCode:  [SystemErrorCode=10054]: SocketHandler::Read
+17:05:11.902 ERROR: Socket Error. API: recv, SessionId: 912, ReturnCode:  [SystemErrorCode=10054]: SocketHandler::Read
   Protocol Component : SevError(2) : sockethandler.cpp : 102
-17:02:38.380 ERROR: Socket Error. API: recv, SessionId: 912, ReturnCode:  [SystemErrorCode=10054]
+17:05:11.905 ERROR: Socket Error. API: recv, SessionId: 912, ReturnCode:  [SystemErrorCode=10054]
   Protocol Component : SevError(2) : sockethandler.cpp : 102
-17:02:38.382 ERROR: target definition defaultTarget has not been created
+17:05:11.906 ERROR: target definition defaultTarget has not been created
   Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122
-17:02:38.382 Operation succeeded: ShutdownServer
-  Reason: ERRNone  Severity: ERRSuccessful17:02:38.382 ERROR: target definition defaultTarget has not been created
+17:05:11.906 Operation succeeded: ShutdownServer
+  Reason: ERRNone  Severity: ERRSuccessful17:05:11.906 ERROR: target definition defaultTarget has not been created
   Protocol Component : SevError(2) : targetdefinitionmanager.cpp : 5122
