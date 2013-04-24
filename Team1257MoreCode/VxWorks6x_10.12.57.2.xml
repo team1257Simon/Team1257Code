@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targetconnection version="0.12">
+	<registryhost>localhost</registryhost>
+	<name>VxWorks6x_10.12.57.2</name>
+	<type>Wind River Target Server Connection</type>
+	<private>true</private>
+	<tgtsvr.args>-V -R $(WIND_HOME)/workspace -RW -Bt 3 -c $(WIND_HOME)/WPILib/cRIOFRC_vxWorks 10.12.57.2</tgtsvr.args>
+	<wrsplatform>
+		<subtype>vxworks</subtype>
+		<name>vxworks-6.3</name>
+	</wrsplatform>
+	<generic>
+		<attribute name="DEVICE" value="WTX_VXWORKS"/>
+		<multiContextConfigMap name="MultiContextConfigMap">
+			<contextConfig name="MPC5200">
+				<attribute name="showTargetExceptions" value="true"/>
+				<basenamemappings>
+					<basename match="*" substitute="*.unstripped"/>
+					<basename match="*" substitute="*"/>
+				</basenamemappings>
+				<attribute name="isFetchTargetStateOnStop" value="false"/>
+				<attribute name="NAME" value="MPC5200"/>
+				<attribute name="listenToStartExitEvents" value="true"/>
+				<attribute name="isFetchTargetStateOnRun" value="false"/>
+				<attribute name="targetStateUpdateStrategy" value="manual"/>
+				<attribute name="Breakpoint.default.stopScope" value="stop-triggering"/>
+				<objectpathmappings>
+					<path prefix="host:/" substitute="C:/" default="true" enabled="true" direction="0"/>
+					<path prefix="/" substitute="C:/" default="true" enabled="true" direction="2"/>
+					<path prefix="host:/c/ni-rt/system/vxWorks/" substitute="$(WIND_HOME)/WPILib/cRIOFRC_vxWorks/" default="true" enabled="true" direction="0"/>
+					<path prefix="/tgtsvr/" substitute="$(WIND_HOME)/workspace/" default="true" enabled="true" direction="0"/>
+					<path prefix="host:" substitute="" default="true" enabled="true" direction="0"/>
+					<path prefix="" substitute="" default="true" enabled="true" direction="0"/>
+				</objectpathmappings>
+				<attribute name="periodicRefreshDelayInSeconds" value="15"/>
+				<attribute name="CONNECT" value="true"/>
+				<map name="CORELIST">
+					<map name="MPC5200">
+						<attribute name="DEVICETYPE" value="microprocessor"/>
+						<attribute name="PROCESSOR" value="MPC5200"/>
+						<attribute name="PROCESSORFAMILY" value="mpc52xx"/>
+						<attribute name="NAME" value="MPC5200"/>
+						<attribute name="SORTORDER" value="0"/>
+					</map>
+				</map>
+			</contextConfig>
+		</multiContextConfigMap>
+	</generic>
+</targetconnection>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WRExportTargetConnectionWizard">
+		<section name="com.windriver.ide.target.ui.wizard.importexport.WRExportTargetConnectionSelectorPage">
+			<section name="com.windriver.ide.target.ui.wizard.importexport.WRExportTargetConnectionSelectorPage$ExportWizardWorkspaceContainerSelectionControl">
+				<list key="Workspace">
+					<item value="/Team1257MoreCode"/>
+				</list>
+			</section>
+			<section name="com.windriver.ide.target.ui.wizard.importexport.WRExportTargetConnectionSelectorPage$WRExportTargetConnectionSelectorControl">
+				<item value="false" key="hideUnconnected"/>
+			</section>
+		</section>
+	</section>
+</section>
