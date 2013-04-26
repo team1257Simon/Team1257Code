@@ -1,0 +1,9 @@
+/*
+ * Team1257Fns.cpp
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+#include "Team1257Fns.h"
+using namespace Team1257;
+

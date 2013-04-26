@@ -28,7 +28,7 @@ void CTeam1257Robot::Autonomous()
 			break;
 		//GetWatchdog().Feed();
 		Drive(.3,.3);
-		if(ultrasonic.GetValue() <= 1.5)
+		if((ultrasonic.GetValue()/2.5)*6450 <= 100)
 		{
 			Turn();
 		}
@@ -47,8 +47,8 @@ void CTeam1257Robot::OperatorControl()
 		if(leftStick.GetRawButton(5) && leftStick.GetRawButton(6))
 		{
 			Drive();
-			if(ultrasonic.GetValue() <= 1.5)
-				while(ultrasonic.GetValue() <= 5)
+			if((ultrasonic.GetValue()/2.5)*6450 <= 100)
+				while((ultrasonic.GetValue()/2.5)*6450 >= 500)
 				{
 					if(leftStick.GetY() >= 0 && leftStick.GetTwist() >= 0)
 						Drive(0,0);
@@ -75,7 +75,7 @@ void CTeam1257Robot::Test()
 		Drive(.3,.3);
 	    team1257LCD->Printf(DriverStationLCD::kUser_Line2, 1, "Ultrasound voltage = %f", ultrasonic.GetValue());
 	    team1257LCD->UpdateLCD();
-		if(ultrasonic.GetValue() <= 1.5)
+		if((ultrasonic.GetValue()/2.5)*6450 <= 100)
 		{
 			Turn();
 		}
@@ -122,4 +122,16 @@ void CTeam1257Robot::Turn()
         }
 }*/
 //bool CTeam1257Robot::Approx(int first, int second, int tol){return first + tol == second || first - tol == second ? true : false;}
-START_ROBOT_CLASS(CTeam1257Robot);
+
+RobotBase *FRC_userClassFactory() 
+{ 
+	return new CTeam1257Robot(); 
+} 
+extern "C" 
+{ 
+	INT32 FRC_UserProgram_StartupLibraryInit() 
+	{ 
+		RobotBase::startRobotTask((FUNCPTR)FRC_userClassFactory); 
+		return 0; 
+	} 
+}

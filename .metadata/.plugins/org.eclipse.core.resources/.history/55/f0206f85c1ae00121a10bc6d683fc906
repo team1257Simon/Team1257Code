@@ -1,0 +1,28 @@
+/*
+ * Team1257Robot.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#ifndef TEAM1257ROBOT_H_
+#define TEAM1257ROBOT_H_
+#include "Vision/RGBImage.h"
+#include "Vision/BinaryImage.h"
+#include "Math.h"
+#include "Team1257RobotBase.h"
+#define AREA_MINIMUM 500
+#define LIGHT 4
+class Team1257Robot: public Team1257RobotBase
+{
+public:
+	Team1257Robot();
+	virtual ~Team1257Robot();
+	bool aimRobot(AxisCamera& camera);
+public:
+	Relay epilepsy;
+	double sPos;
+	int directionToDrive;
+};
+
+#endif /* TEAM1257ROBOT_H_ */

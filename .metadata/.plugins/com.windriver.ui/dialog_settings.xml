@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WROptionalMessageDialog">
+		<item value="0" key="DevCenter.To.Revisit.result"/>
 		<item value="2" key="Remember my decision.result"/>
 	</section>
 </section>

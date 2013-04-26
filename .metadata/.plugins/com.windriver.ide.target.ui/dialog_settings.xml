@@ -12,4 +12,68 @@
 			</section>
 		</section>
 	</section>
+	<section name="TargetConnectionDlg">
+		<item value="true" key="TargetConnectionTypePage.com.windriver.ide.target.vxsim.VxSimConnectType.defaultInitialized"/>
+		<item value="true" key="TargetConnectionTypePage.Wind River Target Server Connection.defaultInitialized"/>
+		<item value="true" key="TargetConnectionSummaryPage.Wind River Target Server Connection.connectOnFinish"/>
+		<item value="true" key="TargetConnectionSummaryPage.com.windriver.ide.target.vxsim.VxSimConnectType.connectOnFinish"/>
+		<item value="false" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.TargetServerOptionsControl.STORE_OPTION_VERBOSE_ID"/>
+		<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.TargetServerOptionsControl.STORE_OPTIONS_ID">
+			<item value="-R C:\WindRiver\workspace -RW -Bt 10"/>
+		</list>
+		<section name="com.windriver.ide.target.ui.wizard.pages.vxworks.VxWorksSimulatorWizardPage">
+			<section name="com.windriver.ide.target.ui.wizard.controls.vxworks.VxsimKernelImageSelectionControl">
+				<item value="true" key="VxWorksSimulatorWizardPage.KernelImageSelectionControl.filePathFromTargetButton.state"/>
+				<section name="com.windriver.ide.target.ui.wizard.pages.vxworks.VxWorksSimulatorWizardPage">
+					<section name="com.windriver.ide.target.ui.wizard.controls.vxworks.VxsimKernelImageSelectionControl$VxsimVxWorksKernelImageFileSelectionControl">
+						<list key="VxWorksSimulatorWizardPage.SelectedKernelImageHistory">
+						</list>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section name="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage">
+			<section name="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage$1">
+				<item value="70" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.WdbproxyTipcConnectionTypeConfigurationPanel.portType"/>
+				<item value="0x4444" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.wdbproxy.port"/>
+				<item value="" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.selectedProcessor.family"/>
+				<item value="UDP" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.wdbproxy.type"/>
+				<item value="" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.WdbproxyTipcConnectionTypeConfigurationPanel.address"/>
+				<item value="71" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.WdbproxyTipcConnectionTypeConfigurationPanel.portInstance"/>
+				<item value="wdbpipe" key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.TargetServerBackendSelectionControl.selectedBackendType"/>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.selectedProcessor">
+					<item value="(default from target)"/>
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.busname">
+					<item value="plb_0"/>
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.wdbproxy.UDP.targetNameAddress">
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.wdbproxy.TCP.targetNameAddress">
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.wdbrpc..targetNameAddress">
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.nodenumber">
+					<item value="1"/>
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.portnumber">
+					<item value="2"/>
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.vxworks.VxsimTargetServerOptionsPage.wdbproxy.targetNameAddress">
+				</list>
+			</section>
+		</section>
+		<section name="com.windriver.ide.target.ui.wizard.pages.vxworks.VxWorksWizardPage">
+			<section name="com.windriver.ide.target.ui.wizard.controls.tgtsvr.TargetServerBackendSelectionControl">
+			</section>
+			<section name="com.windriver.ide.target.ui.wizard.controls.vxworks.VxWorksKernelImageSelectionControl">
+				<section name="com.windriver.ide.target.ui.wizard.pages.vxworks.VxWorksWizardPage">
+					<section name="com.windriver.ide.target.ui.wizard.controls.vxworks.VxWorksKernelImageSelectionControl$VxWorksKernelImageFileSelectionControl">
+					</section>
+				</section>
+			</section>
+		</section>
+		<section name="com.windriver.ui.controls.WRBaseEditBrowseTextControl">
+		</section>
+	</section>
 </section>

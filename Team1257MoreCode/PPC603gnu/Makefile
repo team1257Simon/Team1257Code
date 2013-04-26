@@ -31,7 +31,7 @@ else
 MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
-WS_ROOT_DIR := E:/GitHub/Team1257Code
+WS_ROOT_DIR := C:/Users/Nathan/Documents/GitHub/Team1257Code
 PRJ_ROOT_DIR := $(WS_ROOT_DIR)/Team1257MoreCode
 
 

@@ -1,0 +1,25 @@
+/*
+ * Team1257Fns.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#ifndef TEAM1257FNS_H_
+#define TEAM1257FNS_H_
+#include "Team1257RobotBase.h"
+namespace Team1257
+{
+	typedef struct
+	{
+		int left;
+		int right;
+	}speed;
+	speed drive(Team1257RobotBase);
+	void drive(Team1257RobotBase, int, int);
+	void drive(Team1257RobotBase,speed);
+	speed left_turn={-.3,.3};
+	speed right_turn={.3,-.3};
+	speed forward={.3,.3};
+}
+#endif /* TEAM1257FNS_H_ */

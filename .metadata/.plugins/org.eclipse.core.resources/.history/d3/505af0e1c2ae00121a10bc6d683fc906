@@ -1,0 +1,15 @@
+/*
+ * Team1257Fns.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#ifndef TEAM1257FNS_H_
+#define TEAM1257FNS_H_
+#include <WPIlib.h>
+#include "Vision/RGBImage.h"
+#include "Vision/BinaryImage.h"
+#include "Math.h"
+
+#endif /* TEAM1257FNS_H_ */

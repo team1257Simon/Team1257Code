@@ -1,0 +1,276 @@
+/*
+ * Team1257Robot.cpp
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#include "Team1257Robot.h"
+struct rgb
+{	
+	unsigned char blue;
+	unsigned char green;
+	unsigned char red;
+	unsigned char alpha;
+};
+
+struct target
+{
+	target()
+	{
+		posX = 0;
+		posY = 0;
+		width = 0;
+		timesFound = 0;
+	}
+	
+	target(int x, int y)
+	{
+		posX = x;
+		posY = y;
+		width = 0;
+		timesFound = 0;
+	}
+	int posX;
+	int posY;
+	int width;
+	int timesFound;
+};
+Team1257Robot::Team1257Robot():
+rightStick(RIGHT_STICK),
+leftStick(LEFT_STICK),
+team1257Robot(LEFT_MOTOR,RIGHT_MOTOR),
+epilepsy(LIGHT)
+{
+	team1257Robot.SetExpiration(.1);
+	team1257LCD = DriverStationLCD::GetInstance();
+	team1257LCD->Clear();
+}
+bool Team1257Robot::aimRobot(AxisCamera& camera)
+{
+	return true;
+	ColorImage* colorImage1 = new RGBImage;
+	camera.GetImage(colorImage1);
+	ImageInfo info1;
+	Image* imaqImage1 = colorImage1->GetImaqImage();
+	imaqGetImageInfo(imaqImage1, &info1);
+	rgb* pixelImage1 = (rgb*)info1.imageStart;
+	
+	Wait(0.25);
+	
+	// Light code
+	epilepsy.Set(epilepsy.kForward);
+	
+	Wait(0.25);
+	
+	ColorImage* colorImage2 = new RGBImage;
+	camera.GetImage(colorImage2);
+	ImageInfo info2;
+	Image* imaqImage2 = colorImage2->GetImaqImage();
+	imaqGetImageInfo(imaqImage2, &info2);
+	rgb* pixelImage2 = (rgb*)info2.imageStart;
+	
+	int prevX = -500;
+	
+	target final[15];
+	
+	if(info1.xRes < 191)
+		return false;
+	
+	for(int y = 0; y < info1.yRes; y++)
+	{
+		prevX = -500;
+		vector<target> targets;
+		for(int x = 0; x < info1.xRes; x++)
+		{				
+			// Do the processing
+			if((int)pixelImage2->green - (int)pixelImage1->green > 100) 
+			{
+				if(x - prevX > 7) // Big jump - new target
+				{
+					target newTarget(x, y);
+					newTarget.width++;
+					targets.push_back(newTarget);
+				}
+				else // Still the same target
+				{
+					int index = targets.size() - 1;
+					targets[index].posX += x;
+					targets[index].width++;
+				}
+				prevX = x;
+			}
+			pixelImage1++;
+			pixelImage2++;
+			
+			if(leftStick.GetRawButton(2) || rightStick.GetRawButton(2))
+				break;
+		}
+		
+		for(int i = 0; i < (int)targets.size(); i++)
+		{
+			int leastValue = 5000;
+			int leastIndex = 0;
+			for(int j = 0; j < 15; j++)
+			{
+				if(final[j].width < leastValue)
+				{
+					leastValue = final[j].width;
+					leastIndex = j;
+				}
+				if(leftStick.GetRawButton(2) || rightStick.GetRawButton(2))
+					break;
+			}
+			
+			if(targets[i].width > leastValue)
+			{
+				final[leastIndex] = targets[i];
+			}
+			
+			if(leftStick.GetRawButton(2) || rightStick.GetRawButton(2))
+				break;
+		}
+		
+		pixelImage1 += info1.pixelsPerLine - info1.xRes;
+		pixelImage2 += info2.pixelsPerLine - info2.xRes;
+	}
+	
+	for(int i = 0; i < 15; i++)
+	{
+		final[i].posX /= final[i].width;
+	}
+	
+	vector<target> finalTargets;
+	for(int i = 0; i < 15; i++)
+	{
+		bool found = false;
+		for(int j = 0; j < (int)finalTargets.size(); j++)
+		{
+			if((abs(finalTargets[j].posX / finalTargets[j].timesFound - final[i].posX) < 7) &&
+				(abs(finalTargets[j].width / finalTargets[j].timesFound - final[i].width) < 7))
+			{
+				finalTargets[j].posX += final[i].posX;
+				finalTargets[j].posY += final[i].posY;
+				finalTargets[j].width += final[i].width;
+				finalTargets[j].timesFound++;
+				found = true;          
+			}
+			if(leftStick.GetRawButton(2) || rightStick.GetRawButton(2))
+				break;
+		}
+		if(!found)
+		{
+			finalTargets.push_back(final[i]);
+			finalTargets[finalTargets.size() - 1].timesFound++;
+		}
+		if(leftStick.GetRawButton(2) || rightStick.GetRawButton(2))
+			break;
+	}
+	
+	
+	team1257LCD->Clear();
+	team1257LCD->UpdateLCD();
+	
+	/*if(finalTargets.size() > 0)
+	{
+		team1257LCD->Printf(DriverStationLCD::kUser_Line4, 1, "x: %i, y: %i, width: %i", finalTargets[0].posX / finalTargets[0].timesFound, finalTargets[0].posY / finalTargets[0].timesFound, finalTargets[0].width / finalTargets[0].timesFound);
+		team1257LCD->UpdateLCD();
+	}*/
+/*#define LINE(val) team1257LCD->Printf(DriverStationLCD::kUser_Line##val##, 1, "%i, %i, %i", finalTargets[ ## val ## ].posX, finalTargets[## val ##].posY, finalTargets[## val ##].width);
+	for(int i=0; i<3; i++)
+	{
+		if(i>=finalTargets.size())
+			break;
+		LINE(i);
+	}*/
+	
+	/*if(finalTargets.size() > 1)
+	{
+		team1257LCD->Printf(DriverStationLCD::kUser_Line3, 1, "%i, %i, %i", finalTargets[1].posX / finalTargets[1].timesFound, finalTargets[1].posY / finalTargets[1].timesFound, finalTargets[1].width / finalTargets[1].timesFound);
+		team1257LCD->UpdateLCD();
+	}
+	if(finalTargets.size() > 2)
+	{
+		team1257LCD->Printf(DriverStationLCD::kUser_Line4, 1, "%i, %i, %i", finalTargets[2].posX / finalTargets[2].timesFound, finalTargets[2].posY / finalTargets[2].timesFound, finalTargets[2].width / finalTargets[2].timesFound);
+		team1257LCD->UpdateLCD();
+	}
+	if(finalTargets.size() > 3)
+	{
+		team1257LCD->Printf(DriverStationLCD::kUser_Line5, 1, "%i, %i, %i", finalTargets[3].posX / finalTargets[3].timesFound, finalTargets[3].posY / finalTargets[3].timesFound, finalTargets[3].width / finalTargets[3].timesFound);
+		team1257LCD->UpdateLCD();
+	}*/
+	team1257LCD->Printf(DriverStationLCD::kUser_Line4, 1, "Targets Found: %i", finalTargets.size());
+	team1257LCD->UpdateLCD();
+	
+	target theTarget;
+	theTarget.posY = -5000;
+	// Calculate target positions
+	for(int i = 0; i < (int)finalTargets.size(); i++)
+	{
+		if(finalTargets[i].timesFound > 2)
+		{
+			if(finalTargets[i].posY / finalTargets[i].timesFound > theTarget.posY)
+			{
+				theTarget.posY = finalTargets[i].posY / finalTargets[i].timesFound;
+				theTarget.posX = finalTargets[i].posX / finalTargets[i].timesFound;
+				theTarget.width = finalTargets[i].width / finalTargets[i].timesFound;
+			}
+		}
+		if(leftStick.GetRawButton(2) || rightStick.GetRawButton(2))
+			break;
+	}
+	
+	team1257LCD->Printf(DriverStationLCD::kUser_Line5, 1, "x: %i, y: %i, width: %i", theTarget.posX, theTarget.posY, theTarget.width);
+	team1257LCD->UpdateLCD();
+	// Clean up
+	delete colorImage1;
+	delete colorImage2;
+	imaqDispose(imaqImage1); //I'm pretty sure, check - guess not
+	imaqDispose(imaqImage2);
+	
+	if(theTarget.width < 100) // drive forward
+	{
+		directionToDrive = 1;
+	}
+	else if(theTarget.width > 150) // drive backward
+	{
+		directionToDrive = -1;
+	}
+	else // We're within tolerance...
+	{
+		directionToDrive = 0; // Don't move
+	}
+	double averagePosX = (double)theTarget.posX;
+	
+	double angle  = ((averagePosX - 160) / 160) * 22.5;
+		headingGyro.Reset();
+		
+	while(dAbs(reduceAngle(headingGyro.GetAngle()) - angle) > 0.6 && IsEnabled())
+	{
+		if(reduceAngle(headingGyro.GetAngle()) - angle < -0.6) // Turn left
+		{
+			drive(0.7, -0.7);
+		}
+		if(reduceAngle(headingGyro.GetAngle()) - angle > 0.6) // Turn right
+		{
+			drive(-0.7, 0.7);
+		}
+		
+		if(leftStick.GetRawButton(2) || rightStick.GetRawButton(2))
+			break;
+		
+		team1257LCD->Printf(DriverStationLCD::kUser_Line6, 1, "Angles: %f, %f", reduceAngle(headingGyro.GetAngle()), angle);
+		team1257LCD->UpdateLCD();
+	}
+	
+	drive(0, 0);
+	epilepsy.Set(epilepsy.kOff);
+	Wait(0.25);
+	
+	return true;
+}
+
+Team1257Robot::~Team1257Robot()
+{
+	// TODO Auto-generated destructor stub
+}

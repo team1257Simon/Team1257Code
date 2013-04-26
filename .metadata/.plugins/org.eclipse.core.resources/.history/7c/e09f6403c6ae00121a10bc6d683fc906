@@ -1,0 +1,28 @@
+/*
+ * Team1257Fns.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#ifndef TEAM1257FNS_H_
+#define TEAM1257FNS_H_
+#include "Team1257RobotBase.h"
+namespace Team1257
+{
+	typedef struct
+	{
+		int leftSpeed;
+		int rightSpeed;
+	}direction;
+	direction left_turn={-.3,.3};
+	direction right_turn={.3,-.3};
+	direction forward={.3,.3};
+	direction backward={-.3,-.3};
+	direction drive(Team1257RobotBase);
+	void drive(Team1257RobotBase, int, int);
+	void drive(Team1257RobotBase,direction);
+	double Abs(double);
+	float Abs(float);
+}
+#endif /* TEAM1257FNS_H_ */

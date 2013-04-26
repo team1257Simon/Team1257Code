@@ -1,0 +1,18 @@
+/*
+ * Team1257Robot.cpp
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#include "Team1257Robot.h"
+
+Team1257Robot::Team1257Robot()
+{
+	
+}
+
+Team1257Robot::~Team1257Robot()
+{
+	// TODO Auto-generated destructor stub
+}

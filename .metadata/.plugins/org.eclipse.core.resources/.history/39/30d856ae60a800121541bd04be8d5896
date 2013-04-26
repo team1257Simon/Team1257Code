@@ -1,5 +1,0 @@
-#include "Team1257robot.h"
-CTeam1257Robot::CTeam1257Robot()
-{
-	
-}

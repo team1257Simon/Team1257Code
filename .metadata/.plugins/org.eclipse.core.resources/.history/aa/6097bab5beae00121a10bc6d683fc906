@@ -1,0 +1,20 @@
+/*
+ * Team1257RobotBase.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#ifndef TEAM1257ROBOTBASE_H_
+#define TEAM1257ROBOTBASE_H_
+
+#include <RobotBase.h>
+
+class Team1257RobotBase: public RobotBase
+{
+public:
+	Team1257RobotBase();
+	virtual ~Team1257RobotBase();
+};
+
+#endif /* TEAM1257ROBOTBASE_H_ */

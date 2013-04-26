@@ -1,0 +1,18 @@
+/*
+ * Team1257RobotBase.cpp
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#include "Team1257RobotBase.h"
+
+Team1257RobotBase::Team1257RobotBase()
+{
+
+}
+
+Team1257RobotBase::~Team1257RobotBase()
+{
+	// TODO Auto-generated destructor stub
+}

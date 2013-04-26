@@ -1,0 +1,12 @@
+/*
+ * Team1257Fns.h
+ *
+ *  Created on: Apr 26, 2013
+ *      Author: Nathan
+ */
+
+#ifndef TEAM1257FNS_H_
+#define TEAM1257FNS_H_
+#include <WPIlib.h>
+
+#endif /* TEAM1257FNS_H_ */
