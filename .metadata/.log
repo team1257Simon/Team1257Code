@@ -13955,3 +13955,27 @@ java.io.FileNotFoundException
 
 !ENTRY org.eclipse.osgi 2 1 2013-04-26 18:53:46.111
 !MESSAGE NLS missing message: RenameCSourceFolderChange_ErroMsg in: org.eclipse.cdt.internal.ui.refactoring.rename.Messages
+!SESSION 2013-04-27 17:37:39.158 -----------------------------------------------
+eclipse.buildId=M20110311-1130/WB20110622-1135
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.windriver.ide.common.core 1 0 2013-04-27 17:37:49.731
+!MESSAGE Workbench license obtained in 0.05s, vendor information: <ln>78202</ln><flt>1</flt><ps>1851-1</ps>
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-27 17:37:50.551
+!MESSAGE C:\WindRiver\workbench-3.3\dfw\\x86-win32\bin\dfwserver.exe  -protocol mi -io sockets -useregistry -session dfw-wb331-Nathan -registryhost 127.0.0.1
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-27 17:37:50.784
+!MESSAGE Connected to Wind River debug server backend at 127.0.0.1, 127.0.0.1:21073, PID=2920, Session="dfw-wb331-Nathan"
+
+!ENTRY com.windriver.ide 1 0 2013-04-27 17:37:50.785
+!MESSAGE Workbench start-up time: 11.65s, Main window shown after: 9.07s.
+
+!ENTRY com.windriver.ide.target 1 0 2013-04-27 17:37:51.081
+!MESSAGE Wind River Debug Server API Version '2.12.0' (build name 'DFW_BUILD_3_3_1_21 - 06/23/2011 12:29:11')
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-04-27 17:38:34.503
+!MESSAGE Indexed 'Team1257MoreCode' (1 sources, 218 headers) in 6.17 sec: 21,377 declarations; 26,754 references; 0 unresolved inclusions; 0 syntax errors; 80 unresolved names (0.17%)

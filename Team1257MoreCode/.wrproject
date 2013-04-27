@@ -254,5 +254,10 @@
                 <buildtargetreference name="/Team1257MoreCode/Team1257MoreCode_partialImage"/>
             </contents>
         </buildtarget>
+        <buildtarget buildtool="Librarian" name="Team1257Lib" passed="false" targetname="Team1257Lib">
+            <contents>
+                <folder name="/Team1257MoreCode" recursive="true"/>
+            </contents>
+        </buildtarget>
     </buildtargets>
 </wrxml>
