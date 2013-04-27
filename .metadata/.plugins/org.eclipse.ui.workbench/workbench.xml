@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="29" version="2.0">
+<workbench progressCount="24" version="2.0">
 <workbenchAdvisor/>
 <window height="668" maximized="true" width="1266" x="100" y="60">
 <fastViewData fastViewLocation="1024"/>
@@ -16,7 +16,7 @@
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="175" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.windriver.ide.target.ui.global.targettoolbar" itemType="typeToolBarContribution" x="38" y="22"/>
@@ -41,8 +41,7 @@
 <views>
 <view id="com.windriver.ide.ui.project.WRFileView" partName="File Navigator">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" columnDefaultLayout="100:246:90:50" columnLayout="100:246:0:0" showDateColumn="false" showPathColumn="true" showSizeColumn="false" sorter="0">
-<filters>
-<filter element=".project" ignoreCase="true" isEnabled="false" isFromExtension="true" isFullPathMatch="false"/>
+<filters>&#x0A;<filter element=".project" ignoreCase="true" isEnabled="false" isFromExtension="true" isFullPathMatch="false"/>
 <filter element=".wr*" ignoreCase="true" isEnabled="false" isFromExtension="true" isFullPathMatch="false"/>
 <filter element="*.d" ignoreCase="true" isEnabled="false" isFromExtension="true" isFullPathMatch="false"/>
 <filter element="Makefile" ignoreCase="true" isEnabled="false" isFromExtension="true" isFullPathMatch="false"/>
