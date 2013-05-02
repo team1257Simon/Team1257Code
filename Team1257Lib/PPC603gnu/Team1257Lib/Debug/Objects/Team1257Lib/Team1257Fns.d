@@ -1,6 +1,7 @@
-Team1257Lib/NonDebug/Objects/Team1257Lib/Team1257Robot.o:  \
- C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257Robot.cpp \
-  C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257robot.h \
+Team1257Lib/Debug/Objects/Team1257Lib/Team1257Fns.o:  \
+ C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257Fns.cpp \
+  C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257Fns.h \
+  C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257RobotBase.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIlib.h \
   C:/WindRiver/vxworks-6.3/target/h/string.h \
   C:/WindRiver/vxworks-6.3/target/h/types/vxANSI.h \
@@ -379,7 +380,9 @@ Team1257Lib/NonDebug/Objects/Team1257Lib/Team1257Robot.o:  \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Vision/ColorImage.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIErrors.h
 
-C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257robot.h:
+C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257Fns.h:
+
+C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257RobotBase.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIlib.h:
 

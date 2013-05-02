@@ -1,4 +1,4 @@
-Team1257Lib/NonDebug/Objects/Team1257Lib/Team1257Robot.o:  \
+Team1257Lib/Debug/Objects/Team1257Lib/Team1257Robot.o:  \
  C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257Robot.cpp \
   C:/Users/Nathan/Documents/GitHub/Team1257Code/Team1257Lib/Team1257robot.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIlib.h \

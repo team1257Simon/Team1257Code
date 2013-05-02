@@ -120,11 +120,16 @@ Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257Fns.o : $(PRJ_ROOT_DIR)/Team
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257Robot.o : $(PRJ_ROOT_DIR)/Team1257Robot.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257RobotBase.o : $(PRJ_ROOT_DIR)/Team1257RobotBase.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
 OBJECTS_Team1257Lib = Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257Fns.o \
+	 Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257Robot.o \
 	 Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257RobotBase.o
 
 Team1257Lib/$(MODE_DIR)/Team1257Lib.a : $(OBJECTS_Team1257Lib)
@@ -139,7 +144,7 @@ Team1257Lib/$(MODE_DIR)/Team1257Lib_clean :
 
 force : 
 
-DEP_FILES := Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257Fns.d Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257RobotBase.d
+DEP_FILES := Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257Fns.d Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257Robot.d Team1257Lib/$(MODE_DIR)/Objects/Team1257Lib/Team1257RobotBase.d
 -include $(DEP_FILES)
 
 
